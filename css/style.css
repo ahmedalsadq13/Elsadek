@@ -351,6 +351,20 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 992px) {
+  .request-discount {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .request-discount .description, .request-discount .request {
+    padding: 30px 10px !important;
+    width: 100%;
+  }
+  .request-discount .request form input, .request-discount .request form textarea {
+    width: 80% !important;
+  }
+}
+
 @media (max-width: 768px) {
   .footer .container {
     flex-direction: column !important;
@@ -1251,6 +1265,7 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
 }
 .request-discount .request {
+  overflow: hidden;
   background-color: #FFF;
   flex: 1.1;
   text-align: center;

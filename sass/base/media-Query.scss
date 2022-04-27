@@ -156,6 +156,14 @@
     }
 }
 
+.request-discount{
+    @media (max-width:992px){
+        flex-wrap:wrap ;
+        flex-direction: column ;
+        .description, .request{padding:30px 10px !important;width: 100% ;}
+        .request{form{input,textarea{width: 80% !important;}}}
+    }
+}
 
 
 .footer{
