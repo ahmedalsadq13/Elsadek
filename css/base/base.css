@@ -1,3 +1,9 @@
+/*
+@include keyframes(fadeIn){
+    from{}
+    to{}
+} 
+ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -18,6 +24,7 @@ body {
 }
 body section {
   padding: 100px 0 50px;
+  position: relative;
 }
 body a {
   text-decoration: none;
@@ -27,6 +34,10 @@ body ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+body p {
+  color: #777;
+  line-height: 1.7;
 }
 body::-webkit-scrollbar {
   width: 15px;
@@ -149,6 +160,24 @@ body::-webkit-scrollbar-thumb {
 .section-divider.down::after {
   bottom: -100px;
   top: auto;
+}
+
+.dots {
+  background-image: url("../imgs/dots.png");
+  height: 186px;
+  width: 204px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.dots-up {
+  top: 200px;
+  right: 0;
+}
+
+.dots-down {
+  bottom: 150px;
+  left: 0;
 }
 
 .d-grid {

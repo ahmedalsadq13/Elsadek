@@ -1,4 +1,8 @@
 
+
+
+
+
 /* Start Main Header*/
 .main-head{
     nav{
@@ -113,9 +117,14 @@
 .how-it-works{
     .container{
         @media (max-width:991px){
+            gap:10px !important;
+            justify-content: center !important;
             & > img{display: none}
-            .info{margin-left:0px}
-
+            .info{margin-left :0 !important;justify-content: center !important ;gap:10px}
+            .stat{
+                margin:0;
+                padding:10px !important;
+                .text{margin:10px !important}}
         @media (max-width:600px){
             .stat{img{display: none;}}
 
@@ -123,6 +132,30 @@
     }
 }
 }
+
+.events{
+    .container{
+        img{
+            @media (max-width:991px) {
+                display:none;
+            }
+        }
+        form{
+            @media (max-width:768px){
+                
+                max-width:100%;
+                flex-direction: column;
+                border-radius: 0px !important; 
+                input{border-radius: 0px !important;}
+                
+            }
+        }
+       
+    }
+}
+
+
+
 .footer{
     .container{
         @media (max-width:768px){
