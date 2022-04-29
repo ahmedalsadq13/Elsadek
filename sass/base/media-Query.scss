@@ -147,7 +147,7 @@
 /* Plans */
     .pricing-plans{
         .plan{        
-            &:nth-of-type(2){transform:translateY(0)!important} 
+            &:nth-of-type(2){transform:translateY(0px) !important} 
         }
     }
 
